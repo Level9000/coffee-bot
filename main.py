@@ -25,9 +25,9 @@ while True:
         trimmed_name = name.split(separator, 1)[0]
         cv2.putText(frame, trimmed_name, (x1, y1 - 10), cv2.FONT_HERSHEY_DUPLEX, 1, (0,0,200), 2)
         cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 0, 200), 4)
-        play_sound.lookup_greeting(trimmed_name.lower())
-        play_sound.send_welcome_message()
-        time.sleep(300)
+#         play_sound.lookup_greeting(trimmed_name.lower())
+#         play_sound.send_welcome_message()
+#         time.sleep(300)
         break
     cv2.imshow("Frame", frame)
     key = cv2.waitKey(1)
